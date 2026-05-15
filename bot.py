@@ -357,7 +357,7 @@ async def on_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "3️⃣ Friend joins using your link\n"
             "4️⃣ You get 1 point after verification\n"
             f"5️⃣ Withdraw BigBasket code after {REQUIRED_REFERRALS} points\n\n"
-            "Support: @FRL77_BOT",
+           
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⬅️ Back", callback_data="back")]]),
             parse_mode=ParseMode.HTML,
         )
