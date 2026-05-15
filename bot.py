@@ -18,7 +18,7 @@ from telegram.ext import (
 )
 
 # ===================== CONFIG =====================
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8624414124:AAG4tSFcVp3C0dG8vX4UTJk7jXOd6Hd9x6U")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "PASTE_YOUR_BOT_TOKEN_HERE")
 CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@overlordXlooters")  # channel user must join
 ADMIN_IDS = [int(x.strip()) for x in os.getenv("ADMIN_IDS", "6546821383").split(",") if x.strip().isdigit()]
 
@@ -412,7 +412,7 @@ async def users_count(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
-    if not BOT_TOKEN or BOT_TOKEN == "PASTE_YOUR_BOT_TOKEN_HERE":
+    if not BOT_TOKEN or BOT_TOKEN == "8624414124:AAG4tSFcVp3C0dG8vX4UTJk7jXOd6Hd9x6U":
         raise RuntimeError("Please set BOT_TOKEN in environment or paste it in bot.py")
 
     init_db()
