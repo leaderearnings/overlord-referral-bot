@@ -412,7 +412,7 @@ async def users_count(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
-    if not BOT_TOKEN or BOT_TOKEN == "8624414124:AAG4tSFcVp3C0dG8vX4UTJk7jXOd6Hd9x6U":
+    if not BOT_TOKEN or BOT_TOKEN == "PASTE_YOUR_BOT_TOKEN_HERE":
         raise RuntimeError("Please set BOT_TOKEN in environment or paste it in bot.py")
 
     init_db()
